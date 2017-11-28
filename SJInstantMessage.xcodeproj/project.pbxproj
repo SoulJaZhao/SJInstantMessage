@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		81806B4E9A11FE669559096F /* Pods_SJInstantMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7B03F61BF4865233549505 /* Pods_SJInstantMessage.framework */; };
 		F4DCD9781FCD4C660097ADFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD9771FCD4C660097ADFC /* AppDelegate.m */; };
-		F4DCD97B1FCD4C660097ADFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD97A1FCD4C660097ADFC /* ViewController.m */; };
 		F4DCD97E1FCD4C660097ADFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DCD97C1FCD4C660097ADFC /* Main.storyboard */; };
 		F4DCD9801FCD4C660097ADFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DCD97F1FCD4C660097ADFC /* Assets.xcassets */; };
 		F4DCD9831FCD4C660097ADFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DCD9811FCD4C660097ADFC /* LaunchScreen.storyboard */; };
 		F4DCD9861FCD4C660097ADFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD9851FCD4C660097ADFC /* main.m */; };
+		F4DCD99C1FCD519E0097ADFC /* SJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD9921FCD519D0097ADFC /* SJTabBarController.m */; };
+		F4DCD99D1FCD519E0097ADFC /* SJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD9951FCD519D0097ADFC /* SJBaseViewController.m */; };
+		F4DCD99E1FCD519E0097ADFC /* SJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD9981FCD519D0097ADFC /* SJTableViewController.m */; };
+		F4DCD99F1FCD519E0097ADFC /* SJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD99B1FCD519E0097ADFC /* SJNavigationController.m */; };
+		F4DCD9A81FCD52350097ADFC /* UIImage+SJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD9A51FCD52350097ADFC /* UIImage+SJ.m */; };
+		F4DCD9A91FCD52350097ADFC /* NSString+SJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD9A61FCD52350097ADFC /* NSString+SJ.m */; };
+		F4DCD9B01FCD54200097ADFC /* SJLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD9AE1FCD54200097ADFC /* SJLoginViewController.m */; };
+		F4DCD9B11FCD54200097ADFC /* SJLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DCD9AF1FCD54200097ADFC /* SJLoginViewController.xib */; };
+		F4DCD9B61FCD60990097ADFC /* SJBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD9B51FCD60990097ADFC /* SJBaseViewModel.m */; };
+		F4DCD9B91FCD60AE0097ADFC /* SJLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD9B81FCD60AE0097ADFC /* SJLoginViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,14 +32,32 @@
 		F4DCD9731FCD4C660097ADFC /* SJInstantMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJInstantMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DCD9761FCD4C660097ADFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F4DCD9771FCD4C660097ADFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F4DCD9791FCD4C660097ADFC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F4DCD97A1FCD4C660097ADFC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F4DCD97D1FCD4C660097ADFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4DCD97F1FCD4C660097ADFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4DCD9821FCD4C660097ADFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4DCD9841FCD4C660097ADFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4DCD9851FCD4C660097ADFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4DCD98C1FCD4DBF0097ADFC /* SJInstantMessage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SJInstantMessage.entitlements; sourceTree = "<group>"; };
+		F4DCD9921FCD519D0097ADFC /* SJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTabBarController.m; sourceTree = "<group>"; };
+		F4DCD9931FCD519D0097ADFC /* SJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTabBarController.h; sourceTree = "<group>"; };
+		F4DCD9951FCD519D0097ADFC /* SJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJBaseViewController.m; sourceTree = "<group>"; };
+		F4DCD9961FCD519D0097ADFC /* SJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTableViewController.h; sourceTree = "<group>"; };
+		F4DCD9971FCD519D0097ADFC /* SJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJBaseViewController.h; sourceTree = "<group>"; };
+		F4DCD9981FCD519D0097ADFC /* SJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTableViewController.m; sourceTree = "<group>"; };
+		F4DCD99A1FCD519E0097ADFC /* SJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNavigationController.h; sourceTree = "<group>"; };
+		F4DCD99B1FCD519E0097ADFC /* SJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNavigationController.m; sourceTree = "<group>"; };
+		F4DCD9A11FCD51FB0097ADFC /* SJAppFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJAppFunc.h; sourceTree = "<group>"; };
+		F4DCD9A41FCD52350097ADFC /* NSString+SJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SJ.h"; sourceTree = "<group>"; };
+		F4DCD9A51FCD52350097ADFC /* UIImage+SJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SJ.m"; sourceTree = "<group>"; };
+		F4DCD9A61FCD52350097ADFC /* NSString+SJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SJ.m"; sourceTree = "<group>"; };
+		F4DCD9A71FCD52350097ADFC /* UIImage+SJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SJ.h"; sourceTree = "<group>"; };
+		F4DCD9AD1FCD54200097ADFC /* SJLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJLoginViewController.h; sourceTree = "<group>"; };
+		F4DCD9AE1FCD54200097ADFC /* SJLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJLoginViewController.m; sourceTree = "<group>"; };
+		F4DCD9AF1FCD54200097ADFC /* SJLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SJLoginViewController.xib; sourceTree = "<group>"; };
+		F4DCD9B41FCD60990097ADFC /* SJBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJBaseViewModel.h; sourceTree = "<group>"; };
+		F4DCD9B51FCD60990097ADFC /* SJBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJBaseViewModel.m; sourceTree = "<group>"; };
+		F4DCD9B71FCD60AE0097ADFC /* SJLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJLoginViewModel.h; sourceTree = "<group>"; };
+		F4DCD9B81FCD60AE0097ADFC /* SJLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLoginViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,18 +110,156 @@
 		F4DCD9751FCD4C660097ADFC /* SJInstantMessage */ = {
 			isa = PBXGroup;
 			children = (
+				F4DCD9AA1FCD53D00097ADFC /* Modules */,
+				F4DCD9A21FCD52200097ADFC /* Tools */,
+				F4DCD9A01FCD51D20097ADFC /* Macro */,
+				F4DCD9901FCD513B0097ADFC /* Foundation */,
+				F4DCD98F1FCD512B0097ADFC /* AppDelegate */,
+				F4DCD98D1FCD50770097ADFC /* Resources */,
 				F4DCD98C1FCD4DBF0097ADFC /* SJInstantMessage.entitlements */,
-				F4DCD9761FCD4C660097ADFC /* AppDelegate.h */,
-				F4DCD9771FCD4C660097ADFC /* AppDelegate.m */,
-				F4DCD9791FCD4C660097ADFC /* ViewController.h */,
-				F4DCD97A1FCD4C660097ADFC /* ViewController.m */,
-				F4DCD97C1FCD4C660097ADFC /* Main.storyboard */,
-				F4DCD97F1FCD4C660097ADFC /* Assets.xcassets */,
-				F4DCD9811FCD4C660097ADFC /* LaunchScreen.storyboard */,
-				F4DCD9841FCD4C660097ADFC /* Info.plist */,
-				F4DCD9851FCD4C660097ADFC /* main.m */,
 			);
 			path = SJInstantMessage;
+			sourceTree = "<group>";
+		};
+		F4DCD98D1FCD50770097ADFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD98E1FCD509D0097ADFC /* Storyboard */,
+				F4DCD9851FCD4C660097ADFC /* main.m */,
+				F4DCD9841FCD4C660097ADFC /* Info.plist */,
+				F4DCD97F1FCD4C660097ADFC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4DCD98E1FCD509D0097ADFC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD9811FCD4C660097ADFC /* LaunchScreen.storyboard */,
+				F4DCD97C1FCD4C660097ADFC /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F4DCD98F1FCD512B0097ADFC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD9761FCD4C660097ADFC /* AppDelegate.h */,
+				F4DCD9771FCD4C660097ADFC /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F4DCD9901FCD513B0097ADFC /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD9B31FCD608A0097ADFC /* ViewModel */,
+				F4DCD9991FCD519E0097ADFC /* Navigation */,
+				F4DCD9911FCD519D0097ADFC /* TabBarController */,
+				F4DCD9941FCD519D0097ADFC /* ViewController */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		F4DCD9911FCD519D0097ADFC /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD9931FCD519D0097ADFC /* SJTabBarController.h */,
+				F4DCD9921FCD519D0097ADFC /* SJTabBarController.m */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		F4DCD9941FCD519D0097ADFC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD9961FCD519D0097ADFC /* SJTableViewController.h */,
+				F4DCD9981FCD519D0097ADFC /* SJTableViewController.m */,
+				F4DCD9971FCD519D0097ADFC /* SJBaseViewController.h */,
+				F4DCD9951FCD519D0097ADFC /* SJBaseViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F4DCD9991FCD519E0097ADFC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD99A1FCD519E0097ADFC /* SJNavigationController.h */,
+				F4DCD99B1FCD519E0097ADFC /* SJNavigationController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F4DCD9A01FCD51D20097ADFC /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD9A11FCD51FB0097ADFC /* SJAppFunc.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		F4DCD9A21FCD52200097ADFC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD9A31FCD52350097ADFC /* Categorys */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F4DCD9A31FCD52350097ADFC /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD9A41FCD52350097ADFC /* NSString+SJ.h */,
+				F4DCD9A51FCD52350097ADFC /* UIImage+SJ.m */,
+				F4DCD9A61FCD52350097ADFC /* NSString+SJ.m */,
+				F4DCD9A71FCD52350097ADFC /* UIImage+SJ.h */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		F4DCD9AA1FCD53D00097ADFC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD9AB1FCD53DA0097ADFC /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F4DCD9AB1FCD53DA0097ADFC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD9B21FCD60760097ADFC /* ViewModel */,
+				F4DCD9AC1FCD53E00097ADFC /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F4DCD9AC1FCD53E00097ADFC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD9AD1FCD54200097ADFC /* SJLoginViewController.h */,
+				F4DCD9AE1FCD54200097ADFC /* SJLoginViewController.m */,
+				F4DCD9AF1FCD54200097ADFC /* SJLoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F4DCD9B21FCD60760097ADFC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD9B71FCD60AE0097ADFC /* SJLoginViewModel.h */,
+				F4DCD9B81FCD60AE0097ADFC /* SJLoginViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F4DCD9B31FCD608A0097ADFC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCD9B41FCD60990097ADFC /* SJBaseViewModel.h */,
+				F4DCD9B51FCD60990097ADFC /* SJBaseViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +291,7 @@
 		F4DCD96B1FCD4C660097ADFC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SJ;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = SoulJa;
 				TargetAttributes = {
@@ -166,6 +332,7 @@
 				F4DCD9831FCD4C660097ADFC /* LaunchScreen.storyboard in Resources */,
 				F4DCD9801FCD4C660097ADFC /* Assets.xcassets in Resources */,
 				F4DCD97E1FCD4C660097ADFC /* Main.storyboard in Resources */,
+				F4DCD9B11FCD54200097ADFC /* SJLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,9 +411,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4DCD97B1FCD4C660097ADFC /* ViewController.m in Sources */,
+				F4DCD9B01FCD54200097ADFC /* SJLoginViewController.m in Sources */,
+				F4DCD9A91FCD52350097ADFC /* NSString+SJ.m in Sources */,
+				F4DCD9A81FCD52350097ADFC /* UIImage+SJ.m in Sources */,
+				F4DCD99F1FCD519E0097ADFC /* SJNavigationController.m in Sources */,
+				F4DCD99E1FCD519E0097ADFC /* SJTableViewController.m in Sources */,
+				F4DCD99D1FCD519E0097ADFC /* SJBaseViewController.m in Sources */,
+				F4DCD9B61FCD60990097ADFC /* SJBaseViewModel.m in Sources */,
 				F4DCD9861FCD4C660097ADFC /* main.m in Sources */,
 				F4DCD9781FCD4C660097ADFC /* AppDelegate.m in Sources */,
+				F4DCD9B91FCD60AE0097ADFC /* SJLoginViewModel.m in Sources */,
+				F4DCD99C1FCD519E0097ADFC /* SJTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,13 +559,13 @@
 				CODE_SIGN_ENTITLEMENTS = SJInstantMessage/SJInstantMessage.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6V3H2BMVZC;
-				INFOPLIST_FILE = SJInstantMessage/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SJInstantMessage/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soulja.SJInstantMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0c587c2b-60cc-41a0-bdd6-f53ee62317d0";
 				PROVISIONING_PROFILE_SPECIFIER = SJInstantMessage_develop;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -403,13 +578,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6V3H2BMVZC;
-				INFOPLIST_FILE = SJInstantMessage/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SJInstantMessage/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soulja.SJInstantMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "1f258ce2-4dd0-491f-90e5-b2685f4ba153";
 				PROVISIONING_PROFILE_SPECIFIER = SJInstantMessage_distribution;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

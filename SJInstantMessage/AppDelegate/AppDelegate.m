@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+// 第三方库
+#import <HyphenateLite/HyphenateLite.h>
+
+/**  环信AppKey **/
+static NSString * const kEMClientAppKey = @"1167171103115105#sjinstantmessage";
 
 @interface AppDelegate ()
 
@@ -17,7 +22,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 初始化环信
+    [self initEMClient];
     return YES;
+}
+
+#pragma mark - 初始化环信
+- (void)initEMClient {
+    EMOptions *options = [EMOptions optionsWithAppkey:kEMClientAppKey];
+#if DEBUG
+    options.apnsCertName = @"Develop";
+#else
+    options.apnsCertName = @"Distribution";
+#endif
+    options.isAutoLogin = YES; // 自动登录
+    [[EMClient sharedClient] initializeSDKWithOptions:options];
 }
 
 
@@ -30,11 +50,13 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[EMClient sharedClient] applicationDidEnterBackground:application];
 }
 
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    [[EMClient sharedClient] applicationWillEnterForeground:application];
 }
 
 
