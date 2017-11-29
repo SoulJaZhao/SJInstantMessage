@@ -16,12 +16,5 @@
 #import "SJBaseViewController.h"
 
 @interface SJBaseViewModel : NSObject
-/**  控制器 **/
-@property (nonatomic, weak) SJBaseViewController *controller;
 
-/*
- *  初始化方法
- *  @param  controller    控制器
- */
-- (instancetype)initWithController:(SJBaseViewController *)controller;
 @end

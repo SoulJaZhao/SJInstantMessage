@@ -23,6 +23,9 @@
 		F4DCD9B11FCD54200097ADFC /* SJLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DCD9AF1FCD54200097ADFC /* SJLoginViewController.xib */; };
 		F4DCD9B61FCD60990097ADFC /* SJBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD9B51FCD60990097ADFC /* SJBaseViewModel.m */; };
 		F4DCD9B91FCD60AE0097ADFC /* SJLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD9B81FCD60AE0097ADFC /* SJLoginViewModel.m */; };
+		F4E6E1341FCEB3CF00205E40 /* SJRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E6E1321FCEB3CF00205E40 /* SJRegisterViewController.m */; };
+		F4E6E1351FCEB3CF00205E40 /* SJRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E6E1331FCEB3CF00205E40 /* SJRegisterViewController.xib */; };
+		F4E6E1391FCEB8AB00205E40 /* SJRegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E6E1381FCEB8AB00205E40 /* SJRegisterViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,11 @@
 		F4DCD9B51FCD60990097ADFC /* SJBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJBaseViewModel.m; sourceTree = "<group>"; };
 		F4DCD9B71FCD60AE0097ADFC /* SJLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJLoginViewModel.h; sourceTree = "<group>"; };
 		F4DCD9B81FCD60AE0097ADFC /* SJLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLoginViewModel.m; sourceTree = "<group>"; };
+		F4E6E1311FCEB3CF00205E40 /* SJRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJRegisterViewController.h; sourceTree = "<group>"; };
+		F4E6E1321FCEB3CF00205E40 /* SJRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJRegisterViewController.m; sourceTree = "<group>"; };
+		F4E6E1331FCEB3CF00205E40 /* SJRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SJRegisterViewController.xib; sourceTree = "<group>"; };
+		F4E6E1371FCEB8AB00205E40 /* SJRegisterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJRegisterViewModel.h; sourceTree = "<group>"; };
+		F4E6E1381FCEB8AB00205E40 /* SJRegisterViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJRegisterViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +228,7 @@
 		F4DCD9AA1FCD53D00097ADFC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4E6E12F1FCEB3A300205E40 /* Register */,
 				F4DCD9AB1FCD53DA0097ADFC /* Login */,
 			);
 			path = Modules;
@@ -258,6 +267,34 @@
 			children = (
 				F4DCD9B41FCD60990097ADFC /* SJBaseViewModel.h */,
 				F4DCD9B51FCD60990097ADFC /* SJBaseViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F4E6E12F1FCEB3A300205E40 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				F4E6E1361FCEB82D00205E40 /* ViewModel */,
+				F4E6E1301FCEB3B900205E40 /* Controller */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		F4E6E1301FCEB3B900205E40 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4E6E1311FCEB3CF00205E40 /* SJRegisterViewController.h */,
+				F4E6E1321FCEB3CF00205E40 /* SJRegisterViewController.m */,
+				F4E6E1331FCEB3CF00205E40 /* SJRegisterViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F4E6E1361FCEB82D00205E40 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4E6E1371FCEB8AB00205E40 /* SJRegisterViewModel.h */,
+				F4E6E1381FCEB8AB00205E40 /* SJRegisterViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -329,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E6E1351FCEB3CF00205E40 /* SJRegisterViewController.xib in Resources */,
 				F4DCD9831FCD4C660097ADFC /* LaunchScreen.storyboard in Resources */,
 				F4DCD9801FCD4C660097ADFC /* Assets.xcassets in Resources */,
 				F4DCD97E1FCD4C660097ADFC /* Main.storyboard in Resources */,
@@ -417,9 +455,11 @@
 				F4DCD99F1FCD519E0097ADFC /* SJNavigationController.m in Sources */,
 				F4DCD99E1FCD519E0097ADFC /* SJTableViewController.m in Sources */,
 				F4DCD99D1FCD519E0097ADFC /* SJBaseViewController.m in Sources */,
+				F4E6E1341FCEB3CF00205E40 /* SJRegisterViewController.m in Sources */,
 				F4DCD9B61FCD60990097ADFC /* SJBaseViewModel.m in Sources */,
 				F4DCD9861FCD4C660097ADFC /* main.m in Sources */,
 				F4DCD9781FCD4C660097ADFC /* AppDelegate.m in Sources */,
+				F4E6E1391FCEB8AB00205E40 /* SJRegisterViewModel.m in Sources */,
 				F4DCD9B91FCD60AE0097ADFC /* SJLoginViewModel.m in Sources */,
 				F4DCD99C1FCD519E0097ADFC /* SJTabBarController.m in Sources */,
 			);

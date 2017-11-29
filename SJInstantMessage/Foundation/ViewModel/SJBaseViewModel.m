@@ -9,12 +9,5 @@
 #import "SJBaseViewModel.h"
 
 @implementation SJBaseViewModel
-#pragma mark - 初始化方法
-- (instancetype)initWithController:(SJBaseViewController *)controller {
-    self = [super init];
-    if (self) {
-        _controller = controller;
-    }
-    return self;
-}
+
 @end

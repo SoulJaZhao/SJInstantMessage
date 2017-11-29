@@ -9,6 +9,7 @@
 #import "SJLoginViewController.h"
 // Private
 #import "SJLoginViewModel.h"
+#import "SJRegisterViewController.h"
 
 @interface SJLoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *tfUsername;
@@ -24,7 +25,7 @@
 {
     if (_loginViewModel == nil) {
         
-        _loginViewModel = [[SJLoginViewModel alloc] initWithController:self];
+        _loginViewModel = [[SJLoginViewModel alloc] init];
     }
     return _loginViewModel;
 }
@@ -44,6 +45,8 @@
     self.title = @"登录";
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"确定" style:UIBarButtonItemStyleDone target:self action:@selector(tapLoginBtn)];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:UIBarButtonItemStyleDone target:self action:@selector(tapRegisterBtn)];
 }
 
 #pragma mark - 绑定模型
@@ -60,7 +63,24 @@
 
 #pragma mark - 监听登录
 - (void)tapLoginBtn {
-    [self.loginViewModel.loginCommand execute:@[self.tfUsername.text,self.tfPassword.text]];
+    [self.view endEditing:YES];
+    [self showLoadingHUD];
+    @weakify(self);
+    [[self.loginViewModel.loginCommand execute:@[self.tfUsername.text,self.tfPassword.text]] subscribeNext:^(NSString *errorDescription) {
+        @strongify(self);
+        [self hideLoadingHUD];
+        if (errorDescription) {
+            [self showToastWithMessage:errorDescription];
+        } else {
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }];
+}
+
+#pragma mark - 点击注册
+- (void)tapRegisterBtn {
+    SJRegisterViewController *registerVC = [[SJRegisterViewController alloc] initWithNibName:@"SJRegisterViewController" bundle:nil];
+    [self.navigationController pushViewController:registerVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

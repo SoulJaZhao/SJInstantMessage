@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SJLoginViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SJRegisterViewController">
             <connections>
-                <outlet property="tfPassword" destination="zBq-d0-qh3" id="Jlo-j0-Wj1"/>
-                <outlet property="tfUsername" destination="xEQ-1P-aLM" id="Kkr-zW-mKB"/>
+                <outlet property="tfPassword" destination="uBw-YF-m8D" id="bt2-tx-vUd"/>
+                <outlet property="tfUsername" destination="8Kb-Aa-LmA" id="QdV-d3-2GV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,16 +21,16 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xEQ-1P-aLM">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Kb-Aa-LmA">
                     <rect key="frame" x="30" y="50" width="315" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="DKV-dd-XfL"/>
+                        <constraint firstAttribute="height" constant="40" id="YSr-eX-Ycw"/>
                     </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBq-d0-qh3">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uBw-YF-m8D">
                     <rect key="frame" x="30" y="140" width="315" height="40"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -39,15 +39,14 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="xEQ-1P-aLM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="O2s-3L-c4f"/>
-                <constraint firstItem="xEQ-1P-aLM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Xli-t4-OdX"/>
-                <constraint firstItem="zBq-d0-qh3" firstAttribute="height" secondItem="xEQ-1P-aLM" secondAttribute="height" id="ZsN-94-U3a"/>
-                <constraint firstItem="zBq-d0-qh3" firstAttribute="trailing" secondItem="xEQ-1P-aLM" secondAttribute="trailing" id="gzh-bX-pS8"/>
-                <constraint firstItem="zBq-d0-qh3" firstAttribute="leading" secondItem="xEQ-1P-aLM" secondAttribute="leading" id="htt-Qf-Lsc"/>
-                <constraint firstItem="zBq-d0-qh3" firstAttribute="top" secondItem="xEQ-1P-aLM" secondAttribute="bottom" constant="50" id="jJ0-zq-Xhh"/>
-                <constraint firstAttribute="trailing" secondItem="xEQ-1P-aLM" secondAttribute="trailing" constant="30" id="qhM-11-Rk9"/>
+                <constraint firstItem="uBw-YF-m8D" firstAttribute="top" secondItem="8Kb-Aa-LmA" secondAttribute="bottom" constant="50" id="0gQ-RB-1do"/>
+                <constraint firstItem="8Kb-Aa-LmA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="Aet-Nk-0IA"/>
+                <constraint firstItem="uBw-YF-m8D" firstAttribute="trailing" secondItem="8Kb-Aa-LmA" secondAttribute="trailing" id="FF7-IO-Wcp"/>
+                <constraint firstItem="uBw-YF-m8D" firstAttribute="height" secondItem="8Kb-Aa-LmA" secondAttribute="height" id="Yjz-dK-MG7"/>
+                <constraint firstAttribute="trailing" secondItem="8Kb-Aa-LmA" secondAttribute="trailing" constant="30" id="fhl-Mw-285"/>
+                <constraint firstItem="uBw-YF-m8D" firstAttribute="leading" secondItem="8Kb-Aa-LmA" secondAttribute="leading" id="yi8-T6-sCE"/>
+                <constraint firstItem="8Kb-Aa-LmA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="zgo-VU-xYY"/>
             </constraints>
-            <point key="canvasLocation" x="24.5" y="52.5"/>
         </view>
     </objects>
 </document>
