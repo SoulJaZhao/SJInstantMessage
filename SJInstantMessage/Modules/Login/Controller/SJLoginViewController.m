@@ -21,15 +21,6 @@
 
 @implementation SJLoginViewController
 
-- (SJLoginViewModel *)loginViewModel
-{
-    if (_loginViewModel == nil) {
-        
-        _loginViewModel = [[SJLoginViewModel alloc] init];
-    }
-    return _loginViewModel;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -51,14 +42,13 @@
 
 #pragma mark - 绑定模型
 - (void)bindModel {
-    // 监听确定按钮点击状态
-    RAC(self.navigationItem.rightBarButtonItem,enabled) = [RACSignal combineLatest:@[self.tfUsername.rac_textSignal,self.tfPassword.rac_textSignal] reduce:^id (NSString *username, NSString *password){
-        if (username.length && password.length) {
-            return @(YES);
-        } else {
-            return @(NO);
-        }
-    }];
+    _loginViewModel = [[SJLoginViewModel alloc] init];
+    
+    RAC(_loginViewModel.loginModel,username) = _tfUsername.rac_textSignal;
+    RAC(_loginViewModel.loginModel,password) = _tfPassword.rac_textSignal;
+    
+    // 绑定登录按钮是否可以点击
+    RAC(self.navigationItem.rightBarButtonItem,enabled) = _loginViewModel.loginEnableSignal;
 }
 
 #pragma mark - 监听登录

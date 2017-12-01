@@ -9,16 +9,17 @@
 #import "SJRegisterViewModel.h"
 
 @implementation SJRegisterViewModel
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        [self initialBind];
-    }
-    return self;
-}
-
 #pragma mark - 初始化绑定
 - (void)initialBind {
+    [super initialBind];
+    _registerModel = [[SJRegisterModel alloc] init];
+    
+    // 是否允许注册
+    _registerEnableSignal = [RACSignal combineLatest:@[RACObserve(self.registerModel, username), RACObserve(self.registerModel, password)] reduce:^id (NSString *username, NSString *password){
+        return @(username.length && password.length);
+    }];
+    
+    // 注册操作
     _registerCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(NSArray *input) {
         NSString *username = [input objectAtIndex:0];
         NSString *password = [input objectAtIndex:1];

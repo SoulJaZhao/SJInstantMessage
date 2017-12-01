@@ -16,5 +16,5 @@
 #import "SJBaseViewController.h"
 
 @interface SJBaseViewModel : NSObject
-
+- (void)initialBind;
 @end

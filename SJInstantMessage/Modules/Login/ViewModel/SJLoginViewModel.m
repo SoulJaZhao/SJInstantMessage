@@ -9,18 +9,22 @@
 #import "SJLoginViewModel.h"
 
 @implementation SJLoginViewModel
-
-#pragma mark - 初始化方法
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        [self initialBind];
-    }
-    return self;
-}
-
 #pragma mark - 绑定操作
 - (void)initialBind {
+    [super initialBind];
+    
+    _loginModel = [[SJLoginModel alloc] init];
+    
+    // 是否允许登录
+    _loginEnableSignal = [RACSignal combineLatest:@[RACObserve(self.loginModel, username),RACObserve(self.loginModel, password)] reduce:^id (NSString *username, NSString *password){
+        if (username.length >0 && password.length >0) {
+            return @(YES);
+        } else {
+            return @(NO);
+        }
+    }];
+    
+    // 登录操作
     _loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(NSArray *input) {
         NSString *username = [input objectAtIndex:0];
         NSString *password = [input objectAtIndex:1];

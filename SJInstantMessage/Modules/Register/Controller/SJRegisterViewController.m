@@ -48,14 +48,10 @@
 
 #pragma mark - 绑定模型
 - (void)bindModel {
-    // 监听确定按钮点击状态
-    RAC(self.navigationItem.rightBarButtonItem, enabled) = [RACSignal combineLatest:@[self.tfUsername.rac_textSignal,self.tfPassword.rac_textSignal] reduce:^id (NSString *username, NSString *password){
-        if (username.length && password.length) {
-            return @(YES);
-        } else {
-            return @(NO);
-        }
-    }];
+    RAC(self.registerViewModel.registerModel,username) = _tfUsername.rac_textSignal;
+    RAC(self.registerViewModel.registerModel,password) = _tfPassword.rac_textSignal;
+    
+    RAC(self.navigationItem.rightBarButtonItem,enabled) = _registerViewModel.registerEnableSignal;
 }
 
 #pragma mark - 点击注册按钮

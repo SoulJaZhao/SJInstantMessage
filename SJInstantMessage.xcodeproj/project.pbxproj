@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		81806B4E9A11FE669559096F /* Pods_SJInstantMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7B03F61BF4865233549505 /* Pods_SJInstantMessage.framework */; };
+		F44A10071FD12C6400E8C20F /* SJLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F44A10061FD12C6400E8C20F /* SJLoginModel.m */; };
+		F44A100B1FD1320C00E8C20F /* SJRegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F44A100A1FD1320C00E8C20F /* SJRegisterModel.m */; };
 		F4DCD9781FCD4C660097ADFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD9771FCD4C660097ADFC /* AppDelegate.m */; };
 		F4DCD97E1FCD4C660097ADFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DCD97C1FCD4C660097ADFC /* Main.storyboard */; };
 		F4DCD9801FCD4C660097ADFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DCD97F1FCD4C660097ADFC /* Assets.xcassets */; };
@@ -32,6 +34,10 @@
 		093DEC0A9BEC9962CC5C7C9F /* Pods-SJInstantMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJInstantMessage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SJInstantMessage/Pods-SJInstantMessage.debug.xcconfig"; sourceTree = "<group>"; };
 		4A15C05EBD15EC2F6F95069A /* Pods-SJInstantMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJInstantMessage.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJInstantMessage/Pods-SJInstantMessage.release.xcconfig"; sourceTree = "<group>"; };
 		4A7B03F61BF4865233549505 /* Pods_SJInstantMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJInstantMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44A10051FD12C6400E8C20F /* SJLoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJLoginModel.h; sourceTree = "<group>"; };
+		F44A10061FD12C6400E8C20F /* SJLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLoginModel.m; sourceTree = "<group>"; };
+		F44A10091FD1320C00E8C20F /* SJRegisterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJRegisterModel.h; sourceTree = "<group>"; };
+		F44A100A1FD1320C00E8C20F /* SJRegisterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJRegisterModel.m; sourceTree = "<group>"; };
 		F4DCD9731FCD4C660097ADFC /* SJInstantMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJInstantMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DCD9761FCD4C660097ADFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F4DCD9771FCD4C660097ADFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +101,24 @@
 				4A7B03F61BF4865233549505 /* Pods_SJInstantMessage.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F44A10041FD12C4900E8C20F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F44A10051FD12C6400E8C20F /* SJLoginModel.h */,
+				F44A10061FD12C6400E8C20F /* SJLoginModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F44A10081FD131FF00E8C20F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F44A10091FD1320C00E8C20F /* SJRegisterModel.h */,
+				F44A100A1FD1320C00E8C20F /* SJRegisterModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F4DCD96A1FCD4C660097ADFC = {
@@ -237,6 +261,7 @@
 		F4DCD9AB1FCD53DA0097ADFC /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				F44A10041FD12C4900E8C20F /* Model */,
 				F4DCD9B21FCD60760097ADFC /* ViewModel */,
 				F4DCD9AC1FCD53E00097ADFC /* Controller */,
 			);
@@ -274,6 +299,7 @@
 		F4E6E12F1FCEB3A300205E40 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				F44A10081FD131FF00E8C20F /* Model */,
 				F4E6E1361FCEB82D00205E40 /* ViewModel */,
 				F4E6E1301FCEB3B900205E40 /* Controller */,
 			);
@@ -449,12 +475,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44A100B1FD1320C00E8C20F /* SJRegisterModel.m in Sources */,
 				F4DCD9B01FCD54200097ADFC /* SJLoginViewController.m in Sources */,
 				F4DCD9A91FCD52350097ADFC /* NSString+SJ.m in Sources */,
 				F4DCD9A81FCD52350097ADFC /* UIImage+SJ.m in Sources */,
 				F4DCD99F1FCD519E0097ADFC /* SJNavigationController.m in Sources */,
 				F4DCD99E1FCD519E0097ADFC /* SJTableViewController.m in Sources */,
 				F4DCD99D1FCD519E0097ADFC /* SJBaseViewController.m in Sources */,
+				F44A10071FD12C6400E8C20F /* SJLoginModel.m in Sources */,
 				F4E6E1341FCEB3CF00205E40 /* SJRegisterViewController.m in Sources */,
 				F4DCD9B61FCD60990097ADFC /* SJBaseViewModel.m in Sources */,
 				F4DCD9861FCD4C660097ADFC /* main.m in Sources */,

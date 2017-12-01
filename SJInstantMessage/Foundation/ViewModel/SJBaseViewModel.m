@@ -9,5 +9,16 @@
 #import "SJBaseViewModel.h"
 
 @implementation SJBaseViewModel
+#pragma mark - 初始化方法
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        [self initialBind];
+    }
+    return self;
+}
 
+- (void)initialBind {
+    
+}
 @end
