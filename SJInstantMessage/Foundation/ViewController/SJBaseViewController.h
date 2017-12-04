@@ -69,4 +69,5 @@
 - (void)showBarLoadingHUDWithDuration:(NSTimeInterval)duration
                                 Title:(NSString *)title
                           detailTitle:(NSString *)detailTitle;
+
 @end

@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+// 第三方
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <ReactiveObjC/RACEXTScope.h>
+#import <HyphenateLite/HyphenateLite.h>
 
 @interface SJTabBarController : UITabBarController
 

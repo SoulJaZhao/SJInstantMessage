@@ -10,6 +10,13 @@
 		81806B4E9A11FE669559096F /* Pods_SJInstantMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7B03F61BF4865233549505 /* Pods_SJInstantMessage.framework */; };
 		F44A10071FD12C6400E8C20F /* SJLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F44A10061FD12C6400E8C20F /* SJLoginModel.m */; };
 		F44A100B1FD1320C00E8C20F /* SJRegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F44A100A1FD1320C00E8C20F /* SJRegisterModel.m */; };
+		F44A10101FD1352E00E8C20F /* SJSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44A100F1FD1352E00E8C20F /* SJSettingViewController.m */; };
+		F44A10141FD13C5700E8C20F /* SJSettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F44A10131FD13C5700E8C20F /* SJSettingViewModel.m */; };
+		F44A10191FD13E3C00E8C20F /* SJBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F44A10181FD13E3C00E8C20F /* SJBaseTableViewCell.m */; };
+		F44A101D1FD13E5000E8C20F /* SJLogoutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F44A101B1FD13E5000E8C20F /* SJLogoutTableViewCell.m */; };
+		F44A101E1FD13E5000E8C20F /* SJLogoutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44A101C1FD13E5000E8C20F /* SJLogoutTableViewCell.xib */; };
+		F44A10231FD14B5700E8C20F /* SJFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44A10221FD14B5700E8C20F /* SJFriendsViewController.m */; };
+		F44A10271FD14BF100E8C20F /* SJFriendsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F44A10261FD14BF100E8C20F /* SJFriendsViewModel.m */; };
 		F4DCD9781FCD4C660097ADFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DCD9771FCD4C660097ADFC /* AppDelegate.m */; };
 		F4DCD97E1FCD4C660097ADFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DCD97C1FCD4C660097ADFC /* Main.storyboard */; };
 		F4DCD9801FCD4C660097ADFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DCD97F1FCD4C660097ADFC /* Assets.xcassets */; };
@@ -38,6 +45,19 @@
 		F44A10061FD12C6400E8C20F /* SJLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLoginModel.m; sourceTree = "<group>"; };
 		F44A10091FD1320C00E8C20F /* SJRegisterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJRegisterModel.h; sourceTree = "<group>"; };
 		F44A100A1FD1320C00E8C20F /* SJRegisterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJRegisterModel.m; sourceTree = "<group>"; };
+		F44A100E1FD1352E00E8C20F /* SJSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJSettingViewController.h; sourceTree = "<group>"; };
+		F44A100F1FD1352E00E8C20F /* SJSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJSettingViewController.m; sourceTree = "<group>"; };
+		F44A10121FD13C5700E8C20F /* SJSettingViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJSettingViewModel.h; sourceTree = "<group>"; };
+		F44A10131FD13C5700E8C20F /* SJSettingViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJSettingViewModel.m; sourceTree = "<group>"; };
+		F44A10171FD13E3C00E8C20F /* SJBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJBaseTableViewCell.h; sourceTree = "<group>"; };
+		F44A10181FD13E3C00E8C20F /* SJBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJBaseTableViewCell.m; sourceTree = "<group>"; };
+		F44A101A1FD13E5000E8C20F /* SJLogoutTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJLogoutTableViewCell.h; sourceTree = "<group>"; };
+		F44A101B1FD13E5000E8C20F /* SJLogoutTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLogoutTableViewCell.m; sourceTree = "<group>"; };
+		F44A101C1FD13E5000E8C20F /* SJLogoutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SJLogoutTableViewCell.xib; sourceTree = "<group>"; };
+		F44A10211FD14B5700E8C20F /* SJFriendsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJFriendsViewController.h; sourceTree = "<group>"; };
+		F44A10221FD14B5700E8C20F /* SJFriendsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJFriendsViewController.m; sourceTree = "<group>"; };
+		F44A10251FD14BF100E8C20F /* SJFriendsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJFriendsViewModel.h; sourceTree = "<group>"; };
+		F44A10261FD14BF100E8C20F /* SJFriendsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJFriendsViewModel.m; sourceTree = "<group>"; };
 		F4DCD9731FCD4C660097ADFC /* SJInstantMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJInstantMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DCD9761FCD4C660097ADFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F4DCD9771FCD4C660097ADFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,6 +141,80 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F44A100C1FD134A800E8C20F /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				F44A10151FD13DDA00E8C20F /* View */,
+				F44A10111FD13C3600E8C20F /* ViewModel */,
+				F44A100D1FD134B400E8C20F /* Controller */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		F44A100D1FD134B400E8C20F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F44A100E1FD1352E00E8C20F /* SJSettingViewController.h */,
+				F44A100F1FD1352E00E8C20F /* SJSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F44A10111FD13C3600E8C20F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F44A10121FD13C5700E8C20F /* SJSettingViewModel.h */,
+				F44A10131FD13C5700E8C20F /* SJSettingViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F44A10151FD13DDA00E8C20F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F44A101A1FD13E5000E8C20F /* SJLogoutTableViewCell.h */,
+				F44A101B1FD13E5000E8C20F /* SJLogoutTableViewCell.m */,
+				F44A101C1FD13E5000E8C20F /* SJLogoutTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F44A10161FD13E2300E8C20F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F44A10171FD13E3C00E8C20F /* SJBaseTableViewCell.h */,
+				F44A10181FD13E3C00E8C20F /* SJBaseTableViewCell.m */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		F44A101F1FD14B2900E8C20F /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				F44A10241FD14BDA00E8C20F /* ViewModel */,
+				F44A10201FD14B3800E8C20F /* Controller */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		F44A10201FD14B3800E8C20F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F44A10211FD14B5700E8C20F /* SJFriendsViewController.h */,
+				F44A10221FD14B5700E8C20F /* SJFriendsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F44A10241FD14BDA00E8C20F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F44A10251FD14BF100E8C20F /* SJFriendsViewModel.h */,
+				F44A10261FD14BF100E8C20F /* SJFriendsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F4DCD96A1FCD4C660097ADFC = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +279,7 @@
 		F4DCD9901FCD513B0097ADFC /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				F44A10161FD13E2300E8C20F /* TableViewCell */,
 				F4DCD9B31FCD608A0097ADFC /* ViewModel */,
 				F4DCD9991FCD519E0097ADFC /* Navigation */,
 				F4DCD9911FCD519D0097ADFC /* TabBarController */,
@@ -252,6 +347,8 @@
 		F4DCD9AA1FCD53D00097ADFC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F44A101F1FD14B2900E8C20F /* Friends */,
+				F44A100C1FD134A800E8C20F /* Setting */,
 				F4E6E12F1FCEB3A300205E40 /* Register */,
 				F4DCD9AB1FCD53DA0097ADFC /* Login */,
 			);
@@ -396,6 +493,7 @@
 				F4DCD9831FCD4C660097ADFC /* LaunchScreen.storyboard in Resources */,
 				F4DCD9801FCD4C660097ADFC /* Assets.xcassets in Resources */,
 				F4DCD97E1FCD4C660097ADFC /* Main.storyboard in Resources */,
+				F44A101E1FD13E5000E8C20F /* SJLogoutTableViewCell.xib in Resources */,
 				F4DCD9B11FCD54200097ADFC /* SJLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,7 +576,9 @@
 				F44A100B1FD1320C00E8C20F /* SJRegisterModel.m in Sources */,
 				F4DCD9B01FCD54200097ADFC /* SJLoginViewController.m in Sources */,
 				F4DCD9A91FCD52350097ADFC /* NSString+SJ.m in Sources */,
+				F44A10231FD14B5700E8C20F /* SJFriendsViewController.m in Sources */,
 				F4DCD9A81FCD52350097ADFC /* UIImage+SJ.m in Sources */,
+				F44A101D1FD13E5000E8C20F /* SJLogoutTableViewCell.m in Sources */,
 				F4DCD99F1FCD519E0097ADFC /* SJNavigationController.m in Sources */,
 				F4DCD99E1FCD519E0097ADFC /* SJTableViewController.m in Sources */,
 				F4DCD99D1FCD519E0097ADFC /* SJBaseViewController.m in Sources */,
@@ -489,7 +589,11 @@
 				F4DCD9781FCD4C660097ADFC /* AppDelegate.m in Sources */,
 				F4E6E1391FCEB8AB00205E40 /* SJRegisterViewModel.m in Sources */,
 				F4DCD9B91FCD60AE0097ADFC /* SJLoginViewModel.m in Sources */,
+				F44A10141FD13C5700E8C20F /* SJSettingViewModel.m in Sources */,
+				F44A10191FD13E3C00E8C20F /* SJBaseTableViewCell.m in Sources */,
+				F44A10101FD1352E00E8C20F /* SJSettingViewController.m in Sources */,
 				F4DCD99C1FCD519E0097ADFC /* SJTabBarController.m in Sources */,
+				F44A10271FD14BF100E8C20F /* SJFriendsViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,9 +12,6 @@
 #import <ReactiveObjC/RACEXTScope.h>
 #import <HyphenateLite/HyphenateLite.h>
 
-//Private
-#import "SJBaseViewController.h"
-
 @interface SJBaseViewModel : NSObject
 - (void)initialBind;
 @end
