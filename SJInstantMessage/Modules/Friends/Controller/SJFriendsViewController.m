@@ -10,8 +10,9 @@
 // Private
 #import "SJFriendsViewModel.h"
 #import "SJDIYRefreshHeader.h"
+#import "SJAddFriendViewController.h"
 
-@interface SJFriendsViewController () <UITableViewDelegate>
+@interface SJFriendsViewController () <UITableViewDelegate, EMContactManagerDelegate>
 /**  ViewModel **/
 @property (nonatomic, strong) SJFriendsViewModel *friendsViewModel;
 @end
@@ -35,6 +36,10 @@
     
     self.tableView.dataSource = _friendsViewModel;
     self.tableView.delegate = self;
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStylePlain target:self action:@selector(tapAddFriend)];
+    
+    [[EMClient sharedClient].contactManager addDelegate:self delegateQueue:nil];
 }
 
 #pragma mark - 刷新TableView
@@ -60,6 +65,17 @@
     // 刷新控件
     self.tableView.mj_header = [SJDIYRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshFriends)];
     [self.tableView.mj_header beginRefreshing];
+}
+
+#pragma mark - 点击添加
+- (void)tapAddFriend {
+    SJAddFriendViewController *vc = [[SJAddFriendViewController alloc] initWithNibName:@"SJAddFriendViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+#pragma mark - EMContactManagerDelegate
+- (void)friendRequestDidReceiveFromUser:(NSString *)aUsername message:(NSString *)aMessage {
+    NSLog(@"%@-%@",aUsername,aMessage);
 }
 
 - (void)didReceiveMemoryWarning {

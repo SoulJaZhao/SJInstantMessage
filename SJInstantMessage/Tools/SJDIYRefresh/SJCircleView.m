@@ -55,7 +55,7 @@
 - (void)addRotationAnimation {
     _shapeLayer.strokeEnd = 0.8;
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
-    animation.duration = 2.0f; //设定动画持续时间
+    animation.duration = 5.0f; //设定动画持续时间
     animation.repeatCount = MAXFLOAT; // 重复次数
     animation.byValue = @(M_PI * 2); //设定旋转角度，单位是弧度
     animation.fillMode = kCAFillModeForwards; //设定动画结束后，不恢复初始状态之设置一
