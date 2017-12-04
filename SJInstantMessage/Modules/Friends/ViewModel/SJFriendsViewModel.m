@@ -38,6 +38,12 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [UITableViewCell new];
+    static NSString *friendsCellIdentifier = @"friendsCellIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:friendsCellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:friendsCellIdentifier];
+    }
+    cell.textLabel.text = [self.friends objectAtIndex:indexPath.row];
+    return cell;
 }
 @end

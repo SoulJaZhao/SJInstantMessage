@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		81806B4E9A11FE669559096F /* Pods_SJInstantMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7B03F61BF4865233549505 /* Pods_SJInstantMessage.framework */; };
+		F41A6E291FD4EBEF004D0903 /* SJDIYRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F41A6E281FD4EBEF004D0903 /* SJDIYRefreshHeader.m */; };
+		F41A6E2F1FD4F1E4004D0903 /* SJCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F41A6E2E1FD4F1E4004D0903 /* SJCircleView.m */; };
 		F44A10071FD12C6400E8C20F /* SJLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F44A10061FD12C6400E8C20F /* SJLoginModel.m */; };
 		F44A100B1FD1320C00E8C20F /* SJRegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F44A100A1FD1320C00E8C20F /* SJRegisterModel.m */; };
 		F44A10101FD1352E00E8C20F /* SJSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44A100F1FD1352E00E8C20F /* SJSettingViewController.m */; };
@@ -41,6 +43,10 @@
 		093DEC0A9BEC9962CC5C7C9F /* Pods-SJInstantMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJInstantMessage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SJInstantMessage/Pods-SJInstantMessage.debug.xcconfig"; sourceTree = "<group>"; };
 		4A15C05EBD15EC2F6F95069A /* Pods-SJInstantMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJInstantMessage.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJInstantMessage/Pods-SJInstantMessage.release.xcconfig"; sourceTree = "<group>"; };
 		4A7B03F61BF4865233549505 /* Pods_SJInstantMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJInstantMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41A6E271FD4EBEF004D0903 /* SJDIYRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJDIYRefreshHeader.h; sourceTree = "<group>"; };
+		F41A6E281FD4EBEF004D0903 /* SJDIYRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJDIYRefreshHeader.m; sourceTree = "<group>"; };
+		F41A6E2D1FD4F1E4004D0903 /* SJCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJCircleView.h; sourceTree = "<group>"; };
+		F41A6E2E1FD4F1E4004D0903 /* SJCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJCircleView.m; sourceTree = "<group>"; };
 		F44A10051FD12C6400E8C20F /* SJLoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJLoginModel.h; sourceTree = "<group>"; };
 		F44A10061FD12C6400E8C20F /* SJLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLoginModel.m; sourceTree = "<group>"; };
 		F44A10091FD1320C00E8C20F /* SJRegisterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJRegisterModel.h; sourceTree = "<group>"; };
@@ -121,6 +127,17 @@
 				4A7B03F61BF4865233549505 /* Pods_SJInstantMessage.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F41A6E261FD4EB28004D0903 /* SJDIYRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				F41A6E271FD4EBEF004D0903 /* SJDIYRefreshHeader.h */,
+				F41A6E281FD4EBEF004D0903 /* SJDIYRefreshHeader.m */,
+				F41A6E2D1FD4F1E4004D0903 /* SJCircleView.h */,
+				F41A6E2E1FD4F1E4004D0903 /* SJCircleView.m */,
+			);
+			path = SJDIYRefresh;
 			sourceTree = "<group>";
 		};
 		F44A10041FD12C4900E8C20F /* Model */ = {
@@ -328,6 +345,7 @@
 		F4DCD9A21FCD52200097ADFC /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F41A6E261FD4EB28004D0903 /* SJDIYRefresh */,
 				F4DCD9A31FCD52350097ADFC /* Categorys */,
 			);
 			path = Tools;
@@ -575,10 +593,12 @@
 			files = (
 				F44A100B1FD1320C00E8C20F /* SJRegisterModel.m in Sources */,
 				F4DCD9B01FCD54200097ADFC /* SJLoginViewController.m in Sources */,
+				F41A6E2F1FD4F1E4004D0903 /* SJCircleView.m in Sources */,
 				F4DCD9A91FCD52350097ADFC /* NSString+SJ.m in Sources */,
 				F44A10231FD14B5700E8C20F /* SJFriendsViewController.m in Sources */,
 				F4DCD9A81FCD52350097ADFC /* UIImage+SJ.m in Sources */,
 				F44A101D1FD13E5000E8C20F /* SJLogoutTableViewCell.m in Sources */,
+				F41A6E291FD4EBEF004D0903 /* SJDIYRefreshHeader.m in Sources */,
 				F4DCD99F1FCD519E0097ADFC /* SJNavigationController.m in Sources */,
 				F4DCD99E1FCD519E0097ADFC /* SJTableViewController.m in Sources */,
 				F4DCD99D1FCD519E0097ADFC /* SJBaseViewController.m in Sources */,
